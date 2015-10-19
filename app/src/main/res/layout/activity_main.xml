@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:r="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.svg.draw.MainLauncherActivity" >
+
+    <Button
+        android:id="@+id/import_svg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/import_svg_text" />
+
+    <com.svg.custom.ZoomableRelativeLayout
+        android:id="@+id/zoomable_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/import_svg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+        <com.svg.draw.SVGDrawingView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.svg.custom.SVGImageView
+            android:id="@+id/final_svg_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </com.svg.custom.ZoomableRelativeLayout>
+
+</RelativeLayout>

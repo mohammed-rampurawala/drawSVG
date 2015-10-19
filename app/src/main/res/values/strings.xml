@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Draw SVG</string>
+    <string name="action_about">Settings</string>
+    <string name="import_svg_text">Import SVG</string>
+    <string name="svg_error">Not a valid SVG</string>
+    <string name="select_svg">Select svg&#8230;</string>
+    <string name="select_hint">Please select any SVG image</string>
+    <string name="select_error">Sorry you don\'t have file manager installed</string>
+    <string name="select">Select</string>
+
+</resources>
